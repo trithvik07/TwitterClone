@@ -37,7 +37,7 @@ const Login = () => {
         } finally {
             setLoading(false)
         }
-    }, [credentials, router])
+    }, [credentials, router, toast])
     return (
         <>
 

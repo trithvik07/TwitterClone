@@ -36,7 +36,7 @@ const SideBarItem = ({ user }: { user: any }) => {
             })
         else
             router.push(navigate)
-    }, [user, router])
+    }, [user, router, toast])
     return (
         <>
             {items.map((item) => {

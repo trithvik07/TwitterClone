@@ -40,7 +40,7 @@ const useLike = ({ userId, postId }: { userId: string; postId: string }) => {
         variant: "destructive",
       });
     }
-  }, [currentUser, hasLiked, postId, mutateFetchedPosts, mutatePost]);
+  }, [currentUser, hasLiked, postId, mutateFetchedPosts, mutatePost, toast]);
   return { hasLiked, toggleLike };
 };
 

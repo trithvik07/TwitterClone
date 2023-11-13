@@ -38,7 +38,7 @@ const EditDialog = () => {
         } finally {
             setLoading(false)
         }
-    }, [credentials, mutate])
+    }, [credentials, mutate, toast])
     const onChange = useCallback((e: ChangeEvent<HTMLInputElement>) => {
         setCredentials({ ...credentials, [e.target.name]: e.target.value })
     }, [credentials])

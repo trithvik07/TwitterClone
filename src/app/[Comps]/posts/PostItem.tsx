@@ -42,7 +42,7 @@ const PostItem: React.FC<PostItemProps> = ({ data, userId }) => {
             })
         }
         toggleLike()
-    }, [toggleLike, currentUser])
+    }, [toggleLike, currentUser, toast])
     const LikeIcon = hasLiked ? AiFillHeart : AiOutlineHeart
     return (
         <div onClick={goToPost} className='border-b-[1px] border-neutral-800 p-5 cursor-pointer hover:bg-neutral-900 transition'>

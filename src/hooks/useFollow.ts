@@ -33,7 +33,7 @@ const useFollow = (userId: string) => {
         variant: "destructive",
       });
     }
-  }, [currentUser, isFollowing, userId, mutateCurrentUser, mutateUser]);
+  }, [currentUser, isFollowing, userId, mutateCurrentUser, mutateUser, toast]);
   return {
     isFollowing,
     toggleFollow,

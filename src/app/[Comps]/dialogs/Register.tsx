@@ -38,7 +38,7 @@ const Register = () => {
             setIsLoading(false)
         }
 
-    }, [credentials])
+    }, [credentials, toast])
     return (
         <>
             <DialogContent className="bg-neutral-700 text-white">

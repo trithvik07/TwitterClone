@@ -13,7 +13,7 @@ const useLike = ({ userId, postId }: { userId: string; postId: string }) => {
   const { toast } = useToast();
   const hasLiked = useMemo(() => {
     return fetchedPost?.likedIds.includes(currentUser?.id);
-  }, [fetchedPost?.likedIds]);
+  }, [fetchedPost?.likedIds, currentUser?.id]);
   const toggleLike = useCallback(async () => {
     if (!currentUser) {
       toast({

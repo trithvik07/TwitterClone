@@ -1,7 +1,7 @@
 import serverAuth from "@/utils/serverAuth";
 import { NextRequest, NextResponse } from "next/server";
 
-export async function handler(req: NextRequest, response: NextResponse) {
+async function handler(req: NextRequest, response: NextResponse) {
   const res = NextResponse;
   try {
     const { postId } = await req.json();

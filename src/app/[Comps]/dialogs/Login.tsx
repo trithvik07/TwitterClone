@@ -56,9 +56,8 @@ const Login = () => {
                     <Button type="submit" className="w-fit" onClick={handleLogin} disabled={loading}>Submit</Button>
 
                 </DialogFooter>
-                <p className="text-xs text-center text-slate-400">Don't have an account? Please register</p>
+                <p className="text-xs text-center text-slate-400">{`Don't have an account? Please register`}</p>
             </DialogContent>
-            {/* </Dialog> */}
         </>
     )
 }

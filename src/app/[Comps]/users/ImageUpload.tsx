@@ -23,7 +23,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({ label, onChange, disabled, va
             handleChange(e.target.result)
         }
         reader.readAsDataURL(file)
-    }, [])
+    }, [handleChange])
 
     const { getRootProps, getInputProps } = useDropzone({
         maxFiles: 1,

@@ -1,8 +1,7 @@
-import { NextPageContext } from "next"
 import Header from "../[Comps]/Header"
 import { getServerSession } from "next-auth/next"
 import NotificationFeed from "../[Comps]/NotificationFeed"
-export async function getServerSideProps(context: NextPageContext) {
+export async function getProps() {
     const session = await getServerSession()
     if (!session) {
         return {
@@ -18,7 +17,8 @@ export async function getServerSideProps(context: NextPageContext) {
         }
     }
 }
-const Notifications = () => {
+const Notifications = async () => {
+    const props = getProps()
     return (
         <div>
             <Header label="Notifications" showBackArrow />

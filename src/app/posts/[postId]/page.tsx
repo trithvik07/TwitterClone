@@ -6,7 +6,7 @@ import PostItem from '@/app/[Comps]/posts/PostItem'
 import Header from '@/app/[Comps]/Header'
 import Form from '@/app/[Comps]/Form'
 import CommentFeed from '@/app/[Comps]/posts/CommentFeed'
-const page = ({ params }: { params: { postId: string } }) => {
+const Page = ({ params }: { params: { postId: string } }) => {
     const { data: post, isLoading } = usePost(params.postId)
     return (
         <div>
@@ -26,4 +26,4 @@ const page = ({ params }: { params: { postId: string } }) => {
     )
 }
 
-export default page
+export default Page

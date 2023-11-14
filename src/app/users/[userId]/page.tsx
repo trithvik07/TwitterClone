@@ -5,7 +5,7 @@ import UserHero from "@/app/[Comps]/users/UserHero"
 import UserPage from "@/app/[Comps]/users/UserPage"
 import { useParams } from "next/navigation"
 
-const page = () => {
+const Page = () => {
     const params = useParams()
     const { userId } = params
     return (
@@ -18,4 +18,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

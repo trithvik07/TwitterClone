@@ -16,7 +16,7 @@ const FollowBar = () => {
                         <div key={user?.id} className="mt-2 flex items-center hover:cursor-pointer" onClick={() => {
                             router.push(`/users/${user?.id}`)
                         }}>
-                            <ProfileAvatar image={user?.profileImage} />
+                            <ProfileAvatar image={user?.profileImage || ""} />
                             <div className="ml-3">
                                 <p>{user.name}</p>
                                 <p className="text-xs text-slate-300">@{user?.username}</p>

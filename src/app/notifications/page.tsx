@@ -2,7 +2,7 @@ import { NextPageContext } from "next"
 import Header from "../[Comps]/Header"
 import { getServerSession } from "next-auth/next"
 import NotificationFeed from "../[Comps]/NotificationFeed"
-export async function getSessionProps(context: NextPageContext) {
+export async function getServerSideProps(context: NextPageContext) {
     const session = await getServerSession()
     if (!session) {
         return {
